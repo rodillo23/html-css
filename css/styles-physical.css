@@ -68,9 +68,9 @@ h1{
   margin-bottom: 16px;
 }
 
-h1 + p{
+/* h1 + p{
   margin-bottom: 64px;
-}
+} */
 
 hr{
   margin: 64px 0;
@@ -91,11 +91,27 @@ h3{
 
 pre{
   background: #fec62e;
+  padding: 40px;
+  font-family: 'Roboto';
+  line-height: 24px;
 }
 
 blockquote{
   margin: 32px 0;
+  padding-left: 16px;
+  line-height: 24px;
+  font-size: 24px;
+  border-left: 4px solid var(--gray30);
 }
+
+blockquote span{
+  color: var(--gray10);
+}
+
+blockquote span::before{
+  content: '-';
+}
+
 .hero{
   background-image: linear-gradient(to top, rgba(255,255,255,.3), transparent ), url('../images/pattern.png');
   /* background-repeat: no-repeat; */
@@ -118,6 +134,7 @@ blockquote{
 }
 .section-content h3{
   counter-increment: titleList;
+  padding-bottom: 4px;
 }
 
 .section-content h3::before{
