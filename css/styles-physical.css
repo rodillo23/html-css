@@ -37,6 +37,7 @@ body{
   color: var(--gray30);
   font-family: 'Roboto', sans-serif;
   /*font-family: charter;*/
+  margin: 0;
 }
 
 a{
@@ -63,21 +64,38 @@ nav details summary{
 
 h1{
   font-size: 60px;
-  text-align: end;
+  margin-top: 64px;
+  margin-bottom: 16px;
+}
+
+h1 + p{
+  margin-bottom: 64px;
+}
+
+hr{
+  margin: 64px 0;
 }
 
 h2{
   font-size: 2em;
+  font-weight: normal;
+  margin: 64px 0 40px;
 }
 
 h3{
   font-size: 1.5em;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-weight: normal;
 }
 
 pre{
   background: #fec62e;
 }
 
+blockquote{
+  margin: 32px 0;
+}
 .hero{
   background-image: linear-gradient(to top, rgba(255,255,255,.3), transparent ), url('../images/pattern.png');
   /* background-repeat: no-repeat; */
@@ -88,8 +106,16 @@ pre{
 
 .section-content{
   counter-reset: titleList;
+  margin-top: 164px;
 }
 
+.section-content:first-of-type{
+  margin: 0;
+}
+
+.section-content img{
+  margin-top: 40px;
+}
 .section-content h3{
   counter-increment: titleList;
 }
@@ -105,3 +131,16 @@ pre{
   background: var(--gray30);
   display: inline-block;
 }
+
+.section-content + hr{
+  display: none;
+}
+
+.section-content ul li {
+  margin-bottom: 16px;
+}
+
+.section-content ol li {
+  line-height: 24px;
+}
+
